@@ -6,7 +6,7 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'gradleDemo']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Deependra1beast/GroovyDemo.git']]])
 
-                GradleScript 'Deependra'
+                GradleScript Deependra
 
             }
         }
